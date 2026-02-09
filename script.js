@@ -30,7 +30,7 @@ var clock = document.getElementById('clock');
     {
         const response = await fetch('https://api.nbp.pl/api/exchangerates/tables/A?format=json');
         const data = await response.json();
-        const rates = data[0].rates; /*numer zbioru*/
+        const rates = data[0].rates;
         var li = document.querySelectorAll('.kursy_walut');
 
         var usd = rates.find(waluta=>waluta.code==="USD");
@@ -46,4 +46,5 @@ var clock = document.getElementById('clock');
 
     Kurs_NBP();
     set_time();
+
     setInterval(set_time,10000);
