@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', () => {
 var clock = document.getElementById('clock');
 
     function set_time()
@@ -77,8 +78,9 @@ else if (params.has("kontakt"))
     Kontakt();
 }
 
-
+}
           
     
 
     
+
