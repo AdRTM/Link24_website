@@ -30,7 +30,7 @@ var clock = document.getElementById('clock');
     {
         const response = await fetch('https://api.nbp.pl/api/exchangerates/tables/A?format=json');
         const data = await response.json();
-        const rates = data[0].rates;
+        const rates = data[0].rates; /*numer zbioru*/
         var li = document.querySelectorAll('.kursy_walut');
 
         var usd = rates.find(waluta=>waluta.code==="USD");
@@ -46,5 +46,39 @@ var clock = document.getElementById('clock');
 
     Kurs_NBP();
     set_time();
-
     setInterval(set_time,10000);
+
+/*JSON Connect */ 
+
+function Kontakt()
+{
+    var main_block = document.getElementById('main_block');
+    main_block.classList.add('kontakt');
+
+    main_block.innerHTML = "<h1>KONTAKT</h1>";
+}
+
+function Info() 
+{
+        var main_block = document.getElementById('main_block');
+        main_block.classList.add('info')
+
+        main_block.innerHTML = "<h1>INFO</h1>";
+}
+
+
+const params = new URLSearchParams(window.location.search);
+if (params.has("info")) 
+{
+    Info();
+}
+else if (params.has("kontakt"))
+{
+    Kontakt();
+}
+
+
+          
+    
+
+    
