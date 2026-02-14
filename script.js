@@ -82,5 +82,3 @@ else if (params.has("kontakt"))
     
 
     
-
-
