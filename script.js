@@ -52,16 +52,17 @@ var clock = document.getElementById('clock');
 
 function Kontakt()
 {
-    var main_block = document.getElementById('main_block');
-    main_block.classList.add('kontakt');
+    var main_block = document.getElementById('subpage_main_block');
 
-    main_block.innerHTML = "<h1>KONTAKT</h1>";
+    main_block.innerHTML = 
+    "<div class='kontakt_header'> <img src='https://img.icons8.com/?size=100&id=6xOvUD3RmCmC&format=png&color=000000'> <h1>Kontakt</h1> </div>";
+    main_block.innerHTML += 
+    "<section class='kontakt_section'> <div><img src='https://img.icons8.com/?size=100&id=jqlmkpF_dS-2&format=png&color=000000'> Autor : Adrian Madej - adrtm </div> <div><img src='https://img.icons8.com/?size=100&id=okvpqeYbG0xb&format=png&color=000000'> E-mail : <a href='mailto:adrianmadej1010@gmail.com'>adrianmadej1010@gmail.com</a></div> <div><img src='https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=000000'> Telefon : 531 994 905</div> <div><img src='https://img.icons8.com/?size=100&id=12599&format=png&color=000000'> GitHub : <a href='https://github.com/AdRTM/Link24_website'>https://github.com/AdRTM/Link24_website</a></div> </section>";
 }
 
 function Info() 
 {
-        var main_block = document.getElementById('main_block');
-        main_block.classList.add('info')
+        var main_block = document.getElementById('subpage_main_block');
 
         main_block.innerHTML = "<h1>INFO</h1>";
 }
