@@ -1,5 +1,3 @@
-/*Made with SCSS*/
-
 #newsletter {
   background: rgb(230, 229, 229);
   width: 100%;
@@ -437,7 +435,8 @@ footer ul {
   }
   #main_block {
     gap: 0%;
-    display: inline;
+    display: flex;
+    flex-direction: column;
   }
   .columns {
     font-size: 5.5vw;
@@ -548,18 +547,93 @@ footer ul {
   }
 }
 /*Podstrony*/
-#main_block.kontakt {
+#subpage_main_block {
   margin: 0;
   padding: 0;
   font-family: Calibri;
   letter-spacing: 3%;
   font-weight: 200;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+#subpage_main_block .kontakt_header {
+  flex-basis: 100%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 15%;
+  gap: 0.5em;
+}
+#subpage_main_block .kontakt_header img {
+  width: 4em;
+}
+#subpage_main_block section {
+  width: 90%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  max-width: 3500px;
+  border-top: 2px solid black;
+}
+#subpage_main_block section div {
+  width: 100%;
+  height: 8rem;
+  font-size: 2.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1%;
+  font-weight: 300;
+}
+#subpage_main_block section div img {
+  width: 1.8em;
+}
+#subpage_main_block section div a {
+  color: purple;
+  text-decoration: none;
+}
+#subpage_main_block section div a:hover {
+  text-decoration: underline;
 }
 
-#main_block.info {
-  margin: 0;
-  padding: 0;
-  font-family: Calibri;
-  letter-spacing: 3%;
-  font-weight: 200;
+/**********MEDIA QUERIES**********/
+/*1.Small Screen*/
+@media (max-width: 1000px) {
+  .kontakt_header {
+    height: 7vw;
+  }
+  #subpage_main_block section {
+    width: 100%;
+  }
+  #subpage_main_block section div {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 700px) {
+  .kontakt_header {
+    height: 10vw;
+    font-size: 2.5vw;
+  }
+  #subpage_main_block section div {
+    font-size: 5vw;
+  }
+}
+/*2.Large Screen*/
+@media (min-width: 1750px) {
+  .kontakt_header {
+    height: 5vw;
+    max-height: 200px;
+    font-size: clamp(1px, 1.1vw, 40px);
+  }
+  #subpage_main_block section div {
+    max-height: 255px;
+    height: 7.3vw;
+    font-size: clamp(1px, 2.2vw, 80px);
+  }
 }/*# sourceMappingURL=style.css.map */
