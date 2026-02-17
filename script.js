@@ -58,7 +58,7 @@ function Kontakt()
     main_block.innerHTML = 
     `<div class='subpage_header'> <img src='https://img.icons8.com/?size=100&id=nnbkrcGxTSm8&format=png&color=000000'> <h1>Kontakt</h1> </div>`;
     main_block.innerHTML += 
-    `<section class='subpage_section'> <div><img src='https://img.icons8.com/?size=100&id=jqlmkpF_dS-2&format=png&color=000000'> Autor : Adrian Madej - adrtm </div> <div><img src='https://img.icons8.com/?size=100&id=okvpqeYbG0xb&format=png&color=000000'> E-mail : <a href='mailto:adrianmadej1010@gmail.com'>adrianmadej1010@gmail.com</a></div> <div><img src='https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=000000'> Telefon : 531 994 905</div> <div><img src='https://img.icons8.com/?size=100&id=12599&format=png&color=000000'> GitHub : <a href='https://github.com/AdRTM/Link24_website'>https://github.com/AdRTM/Link24_website</a></div> </section>`;
+    `<section class='subpage_section'> <div><img src='https://img.icons8.com/?size=100&id=jqlmkpF_dS-2&format=png&color=000000'> Autor : Adrian Madej - adrtm </div> <div><img src='https://img.icons8.com/?size=100&id=okvpqeYbG0xb&format=png&color=000000'> E-mail : <a target='_blank' href='mailto:adrianmadej1010@gmail.com'>adrianmadej1010@gmail.com</a></div> <div><img src='https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=000000'> Telefon : 531 994 905</div> <div><img src='https://img.icons8.com/?size=100&id=12599&format=png&color=000000'> GitHub : <a target='_blank' href='https://github.com/AdRTM/Link24_website'>https://github.com/AdRTM/Link24_website</a></div> </section>`;
 }
 
 function Info() 
@@ -74,11 +74,12 @@ function Info()
         <p>Link24 to portal informacyjny obejmujący wiadomości z całego świata.</p> <p>Naszą misją jest aby przekazywać wiadomości prawdziwe i rzetelne.</p> <p>Działamy codziennie i dostarczamy najnowsze oraz najważniejsze informacje ze świata.
         <p>W naszym serwisie znajdziesz informacje z zakresu : </p>
         <ul>
-        <li>Polityki</li>
-        <li>Ekonomii</li>
-        <li>Biznesu</li>
-        <li>Świata</li>
-        <li>Technologii i nauki</li>
+        <li><a target='_blank' href='https://pl.wikipedia.org/wiki/Polityka'>Polityki</a></li>
+        <li><a target='_blank' href='https://pl.wikipedia.org/wiki/Ekonomia'>Ekonomii</a></li>
+        <li><a target='_blank' href='https://pl.wikipedia.org/wiki/Biznes'>Biznesu</a></li>
+        <li><a target='_blank' href='https://pl.wikipedia.org/wiki/Natura'>Świata</a></li>
+        <li><a target='_blank' href='https://pl.wikipedia.org/wiki/Socjologia'>Społeczeństwa</a></li>
+        <li><a target='_blank' href='https://pl.wikipedia.org/wiki/Technika'>Technologii i nauki</a></li>
         </ul>`;
 }
 
