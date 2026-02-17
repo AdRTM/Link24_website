@@ -53,18 +53,33 @@ var clock = document.getElementById('clock');
 function Kontakt()
 {
     var main_block = document.getElementById('subpage_main_block');
+    main_block.classList.add('kontakt');
 
     main_block.innerHTML = 
-    "<div class='kontakt_header'> <img src='https://img.icons8.com/?size=100&id=6xOvUD3RmCmC&format=png&color=000000'> <h1>Kontakt</h1> </div>";
+    `<div class='subpage_header'> <img src='https://img.icons8.com/?size=100&id=nnbkrcGxTSm8&format=png&color=000000'> <h1>Kontakt</h1> </div>`;
     main_block.innerHTML += 
-    "<section class='kontakt_section'> <div><img src='https://img.icons8.com/?size=100&id=jqlmkpF_dS-2&format=png&color=000000'> Autor : Adrian Madej - adrtm </div> <div><img src='https://img.icons8.com/?size=100&id=okvpqeYbG0xb&format=png&color=000000'> E-mail : <a href='mailto:adrianmadej1010@gmail.com'>adrianmadej1010@gmail.com</a></div> <div><img src='https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=000000'> Telefon : 531 994 905</div> <div><img src='https://img.icons8.com/?size=100&id=12599&format=png&color=000000'> GitHub : <a href='https://github.com/AdRTM/Link24_website'>https://github.com/AdRTM/Link24_website</a></div> </section>";
+    `<section class='subpage_section'> <div><img src='https://img.icons8.com/?size=100&id=jqlmkpF_dS-2&format=png&color=000000'> Autor : Adrian Madej - adrtm </div> <div><img src='https://img.icons8.com/?size=100&id=okvpqeYbG0xb&format=png&color=000000'> E-mail : <a href='mailto:adrianmadej1010@gmail.com'>adrianmadej1010@gmail.com</a></div> <div><img src='https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=000000'> Telefon : 531 994 905</div> <div><img src='https://img.icons8.com/?size=100&id=12599&format=png&color=000000'> GitHub : <a href='https://github.com/AdRTM/Link24_website'>https://github.com/AdRTM/Link24_website</a></div> </section>`;
 }
 
 function Info() 
 {
         var main_block = document.getElementById('subpage_main_block');
+        main_block.classList.add('info');
 
-        main_block.innerHTML = "<h1>INFO</h1>";
+        main_block.innerHTML = 
+        `<div class='subpage_header'> <img src='https://img.icons8.com/?size=100&id=BKCQPf8biWWs&format=png&color=000000'> <h1>INFO</h1> </div>`;
+        main_block.innerHTML +=
+        `<section class='subpage_section'><h1>O NAS</h1> 
+        <img src='https://images.unsplash.com/photo-1584931423298-c576fda54bd2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'>
+        <p>Link24 to portal informacyjny obejmujący wiadomości z całego świata.</p> <p>Naszą misją jest aby przekazywać wiadomości prawdziwe i rzetelne.</p> <p>Działamy codziennie i dostarczamy najnowsze oraz najważniejsze informacje ze świata.
+        <p>W naszym serwisie znajdziesz informacje z zakresu : </p>
+        <ul>
+        <li>Polityki</li>
+        <li>Ekonomii</li>
+        <li>Biznesu</li>
+        <li>Świata</li>
+        <li>Technologii i nauki</li>
+        </ul>`;
 }
 
 
