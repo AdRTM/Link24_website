@@ -547,6 +547,22 @@ footer ul {
   }
 }
 /*Podstrony*/
+#subpage_main_block.info {
+  text-wrap: wrap;
+}
+#subpage_main_block.info p, #subpage_main_block.info ul {
+  font-size: 1.4em;
+  margin-left: 2%;
+}
+#subpage_main_block.info section h1 {
+  font-size: 2.5em;
+}
+#subpage_main_block.info section img {
+  height: 15em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 #subpage_main_block {
   margin: 0;
   padding: 0;
@@ -558,10 +574,10 @@ footer ul {
   justify-content: flex-start;
   align-items: center;
 }
-#subpage_main_block .kontakt_header {
+#subpage_main_block .subpage_header {
   flex-basis: 100%;
   width: 100%;
-  height: auto;
+  height: auto; /**/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -570,7 +586,7 @@ footer ul {
   letter-spacing: 15%;
   gap: 0.5em;
 }
-#subpage_main_block .kontakt_header img {
+#subpage_main_block .subpage_header img {
   width: 4em;
 }
 #subpage_main_block section {
@@ -605,20 +621,33 @@ footer ul {
 /**********MEDIA QUERIES**********/
 /*1.Small Screen*/
 @media (max-width: 1000px) {
-  .kontakt_header {
+  .subpage_header {
     height: 7vw;
   }
   #subpage_main_block section {
     width: 100%;
   }
   #subpage_main_block section div {
+    /*font-size: 4vw;*/
     flex-wrap: wrap;
   }
 }
 @media (max-width: 700px) {
-  .kontakt_header {
+  .subpage_header {
     height: 10vw;
     font-size: 2.5vw;
+  }
+  #subpage_main_block.info p, #subpage_main_block.info ul {
+    font-size: 3.8vw;
+    font-weight: 300;
+  }
+  #subpage_main_block.info section h1 {
+    font-size: 6vw;
+  }
+  #subpage_main_block.info section img {
+    height: 35vw;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   #subpage_main_block section div {
     font-size: 5vw;
@@ -626,10 +655,20 @@ footer ul {
 }
 /*2.Large Screen*/
 @media (min-width: 1750px) {
-  .kontakt_header {
+  .subpage_header {
     height: 5vw;
     max-height: 200px;
     font-size: clamp(1px, 1.1vw, 40px);
+  }
+  #subpage_main_block.info section h1 {
+    font-size: clamp(1px, 3vw, 127px);
+  }
+  #subpage_main_block.info section img {
+    height: 17vw;
+    max-height: 600px;
+  }
+  #subpage_main_block.info section p, #subpage_main_block.info section ul {
+    font-size: clamp(1px, 1.7vw, 65px);
   }
   #subpage_main_block section div {
     max-height: 255px;
