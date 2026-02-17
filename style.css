@@ -562,6 +562,13 @@ footer ul {
   -o-object-fit: cover;
      object-fit: cover;
 }
+#subpage_main_block.info section a {
+  color: purple;
+}
+#subpage_main_block.info section a:hover {
+  color: rgb(72, 81, 106);
+  text-decoration: underline;
+}
 
 #subpage_main_block {
   margin: 0;
