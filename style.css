@@ -177,6 +177,13 @@ header {
   width: clamp(1px, 3.5vw, 80px);
 }
 
+.kursy_link {
+  text-decoration: none;
+}
+.kursy_link:hover ul {
+  opacity: 50%;
+}
+
 #kursy {
   width: 100%;
   height: clamp(1px, 4vw, 135px);
@@ -199,6 +206,7 @@ header {
   gap: 10%;
   list-style: none;
   color: goldenrod;
+  transition: 0.3s;
 }
 #kursy ul .symbols {
   color: white;
@@ -537,10 +545,13 @@ footer ul {
   #clock {
     font-size: 3vw;
   }
+  #clock img {
+    width: clamp(1px, 4vw, 105px);
+  }
 }
 @media (min-width: 2100px) {
   #clock {
-    font-size: 60px;
+    font-size: clamp(1px, 2.8vw, 80px);
   }
   #menu img {
     width: 1em;
@@ -584,7 +595,7 @@ footer ul {
 #subpage_main_block .subpage_header {
   flex-basis: 100%;
   width: 100%;
-  height: auto; /**/
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -635,7 +646,6 @@ footer ul {
     width: 100%;
   }
   #subpage_main_block section div {
-    /*font-size: 4vw;*/
     flex-wrap: wrap;
   }
 }
